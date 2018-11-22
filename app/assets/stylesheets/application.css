@@ -13,8 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+img {
+  display: none;
+}
 h1 {
-	color: red;
-	text-align: center;
-	font-weight: 900;
+  text-transform: uppercase;
+  color: red;
+  font-size: 100px;
 }
