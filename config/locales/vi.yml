@@ -31,3 +31,6 @@ vi:
   #CONTACT PAGES
   contact_text: "Liên hệ với Ruby on Rails Tutorial về ứng dụng mẫu tại %{link_contact}."
   link_contact_text: "Trang liên hệ"
+  #NEW PAGE
+  title_user: "Người dùng"
+  user: "Tìm tôi tại"

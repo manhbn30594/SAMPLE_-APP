@@ -3,7 +3,10 @@ href_railstutorial: "http://www.railstutorial.org/"
 href_rubyonrails: "http://rubyonrails.org/"
 href_railstutorial_help: "http://www.railstutorial.org/help"
 href_railstutorial_book: "http://www.railstutorial.org/book"
-href_railstutorial_new: "http://news.railstutorial.org/"
+href_railstutorial_news: "http://news.railstutorial.org/"
 href_michaelhartl: "http://www.michaelhartl.com/"
 href_railstutorial_screencasts: "http://screencasts.railstutorial.org/"
 href_railstutorial_contact: "http://www.railstutorial.org/contact"
+name_max: 50
+email_max: 250
+password_min: 6

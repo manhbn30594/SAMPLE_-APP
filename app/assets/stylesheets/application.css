@@ -14,11 +14,9 @@
  *= require_self
  */
 
-img {
-  display: none;
-}
 h1 {
   text-transform: uppercase;
   color: red;
   font-size: 100px;
 }
+

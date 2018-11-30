@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= full_title yield :title %></title>
+<head>
+  <title><%= full_title yield :title %></title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag "application", media: "all",
     "data-turbolinks-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
-  </head>
+</head>
 
-  <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "sample app", root_path, id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to t("home"), root_path %></li>
-            <li><%= link_to t("help"), helf_path %></li>
-            <li><%= link_to t("login"), "#" %></li>
-            <li><%= link_to t("english"), locale:"en" %></li>
-            <li><%= link_to t("vietnamese"), locale:"vi" %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<body>
+  <header class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
-      <%= yield %>
-      <%= render "layouts/footer" %>
+      <%= link_to "sample app", root_path, id: "logo" %>
+      <nav>
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to t("home"), root_path %></li>
+          <li><%= link_to t("help"), helf_path %></li>
+          <li><%= link_to t("login"), "#" %></li>
+          <li><%= link_to t("english"), locale:"en" %></li>
+          <li><%= link_to t("vietnamese"), locale:"vi" %></li>
+        </ul>
+      </nav>
     </div>
-  </body>
+  </header>
+  <div class="container">
+    <%= yield %>
+    <%= render "layouts/footer" %>
+  </div>
+</body>
+
 </html>
