@@ -10,3 +10,4 @@ href_railstutorial_contact: "http://www.railstutorial.org/contact"
 name_max: 50
 email_max: 250
 password_min: 6
+gravatar_size: 80
