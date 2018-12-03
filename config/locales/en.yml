@@ -31,3 +31,6 @@ en:
   #CONTACT PAGES
   contact_text: "Contact the Ruby on Rails Tutorial about the sample app at the %{link_contact}."
   link_contact_text: "Contact Page"
+  #NEW PAGE
+  title_user: "User"
+  user: "Find me in"
