@@ -14,23 +14,40 @@ en:
   news: "<b>%{link_news}</b>"
   text_news: "News"
   #HOME PAGES
+  title_home: "Home"
   welcome: "Welcome to the Sample App"
   title_welcome: "This is the home page for the %{link_here} sample application."
   rails_tutorial: "Ruby on Rails Tutorial"
   sign_up: "Sign Up Now!"
   #HELP PAGES
+  title_help: "Help"
   rails_book_text: "Get help on the Ruby on Rails Tutorial at the <b>%{link_help}</b>. To get help on this sample app, see the <em>%{link_book}</em>."
   rails_help_section: "Rails Tutorial help section"
   rails_help_book: "Ruby on Rails Tutorial book"
   #ABOUT PAGES
+  title_about: "About"
   about_text: "The %{link_rails_about} is a %{link_rails_book} and %{link_rails_screencasts} to teach web development with %{link_rails}. This is the sample application for the tutorial."
   link_rails_tutorial_text: "Ruby on Rails Tutorial"
   link_rails_book_text: "book"
   link_rails_screencasts_text: "screencast series"
   link_rails_text: "Ruby on Rails"
   #CONTACT PAGES
+  title_contact: "Contact"
   contact_text: "Contact the Ruby on Rails Tutorial about the sample app at the %{link_contact}."
   link_contact_text: "Contact Page"
   #NEW PAGE
+  title_signup: "Sign up"
   title_user: "User"
-  user: "Find me in"
+  user_text: "Find me in"
+  form_name: "Name"
+  form_email: "Email"
+  form_password: "Password"
+  form_password_confirmation: "Password Confirmation"
+  form_submit: "Create my account"
+  form_newuser: "New user?"
+  #
+  title_login: "Login"
+  show: "Not found"
+  error: "Error"
+
+
