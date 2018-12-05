@@ -1,12 +1,12 @@
 <footer class="footer">
-  <small><%= raw t("ruby_on_rails",
-    link_rubyonrails: link_to(t("text_rubyonrails"), Settings.href_rubyonrails),
-    link_michaelhartl: link_to(t("text_michaelhartl"), Settings.href_michaelhartl)) %></small>
+  <small><%= raw t(".ruby_on_rails",
+    link_rubyonrails: link_to(t(".text_rubyonrails"), Settings.href_rubyonrails),
+    link_michaelhartl: link_to(t(".text_michaelhartl"), Settings.href_michaelhartl)) %></small>
   <nav>
     <ul>
-      <li><%= link_to t("about"), about_path %></li>
-      <li><%= link_to t("contact"), contact_path %></li>
-      <li><%= raw t("news", link_news: link_to(t("text_news"), Settings.href_railstutorial_news)) %></li>
+      <li><%= link_to t(".about"), about_path %></li>
+      <li><%= link_to t(".contact"), contact_path %></li>
+      <li><%= raw t(".news", link_news: link_to(t(".text_news"), Settings.href_railstutorial_news)) %></li>
     </ul>
   </nav>
 </footer>

@@ -1,59 +1,87 @@
 en:
-  #HEADER
-  home: "Home"
-  help: "Help"
-  login: "Login"
-  english: "English"
-  vietnamese: "Vietnamese"
-  #FOOTER
-  ruby_on_rails: "The %{link_rubyonrails} by %{link_michaelhartl}"
-  text_rubyonrails: "Ruby on Rails Tutorial"
-  text_michaelhartl: "Michael Hartl"
-  about: "About"
-  contact: "Contact"
-  news: "<b>%{link_news}</b>"
-  text_news: "News"
-  #HOME PAGES
-  title_home: "Home"
-  welcome: "Welcome to the Sample App"
-  title_welcome: "This is the home page for the %{link_here} sample application."
-  rails_tutorial: "Ruby on Rails Tutorial"
-  sign_up: "Sign Up Now!"
-  #HELP PAGES
-  title_help: "Help"
-  rails_book_text: "Get help on the Ruby on Rails Tutorial at the <b>%{link_help}</b>. To get help on this sample app, see the <em>%{link_book}</em>."
-  rails_help_section: "Rails Tutorial help section"
-  rails_help_book: "Ruby on Rails Tutorial book"
-  #ABOUT PAGES
-  title_about: "About"
-  about_text: "The %{link_rails_about} is a %{link_rails_book} and %{link_rails_screencasts} to teach web development with %{link_rails}. This is the sample application for the tutorial."
-  link_rails_tutorial_text: "Ruby on Rails Tutorial"
-  link_rails_book_text: "book"
-  link_rails_screencasts_text: "screencast series"
-  link_rails_text: "Ruby on Rails"
-  #CONTACT PAGES
-  title_contact: "Contact"
-  contact_text: "Contact the Ruby on Rails Tutorial about the sample app at the %{link_contact}."
-  link_contact_text: "Contact Page"
-  #NEW PAGE
-  title_signup: "Sign up"
-  title_user: "User"
-  user_text: "Find me in"
-  form_name: "Name"
-  form_email: "Email"
-  form_password: "Password"
-  form_password_confirmation: "Password Confirmation"
-  form_submit: "Create my account"
-  form_newuser: "New user?"
-  #
-  title_login: "Login"
-  show: "Not found"
-  error: "Error"
-  #LOGIN
-  danger_login: "Invalid email/password combination"
-  #dropdown
-  account: "Account"
-  profile: "Profile"
-  settings: "Settings"
-  logout: "Log out"
-  remember_me: "Remember me on this computer"
+  layouts:
+    header:
+      home: "Home"
+      help: "Help"
+      title_h1: "All User"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Logout"
+      login: "Login"
+      english: "English"
+      vietnamese: "Vietnamese"
+    footer:
+      ruby_on_rails: "The %{link_rubyonrails} by %{link_michaelhartl}"
+      text_rubyonrails: "Ruby on Rails Tutorial"
+      text_michaelhartl: "Michael Hartl"
+      about: "About"
+      contact: "Contact"
+      news: "<b>%{link_news}</b>"
+      text_news: "News"
+  static_pages:
+    home:
+      title_home: "Home"
+      welcome: "Welcome to the Sample App"
+      title_welcome: "This is the home page for the %{link_here} sample application."
+      rails_tutorial: "Ruby on Rails Tutorial"
+      sign_up: "Sign Up Now!"
+    help:
+      title_help: "Help"
+      rails_book_text: "Get help on the Ruby on Rails Tutorial at the <b>%{link_help}</b>. To get help on this sample app, see the <em>%{link_book}</em>."
+      rails_help_section: "Rails Tutorial help section"
+      rails_help_book: "Ruby on Rails Tutorial book"
+    about:
+      title_about: "About"
+      about_text: "The %{link_rails_about} is a %{link_rails_book} and %{link_rails_screencasts} to teach web development with %{link_rails}. This is the sample application for the tutorial."
+      link_rails_tutorial_text: "Ruby on Rails Tutorial"
+      link_rails_book_text: "book"
+      link_rails_screencasts_text: "screencast series"
+      link_rails_text: "Ruby on Rails"
+    contact:
+      title_contact: "Contact"
+      contact_text: "Contact the Ruby on Rails Tutorial about the sample app at the %{link_contact}."
+      link_contact_text: "Contact Page"
+  users:
+    new:
+      title_signup: "Sign up"
+      title_user: "User"
+    form:
+      form_name: "Name"
+      form_email: "Email"
+      form_password: "Password"
+      form_password_confirmation: "Password Confirmation"
+      form_submit: "Create my account"
+    index:
+      title_user: "Users"
+      title_h1: "All User"
+    edit:
+      title_edit: "Edit"
+      title_h1: "Update your profile"
+      form_name: "Name"
+      form_email: "Email"
+      form_password: "Password"
+      form_password_confirmation: "Password Confirmation"
+      save_changes: "Save changes"
+      change_gravatar: "Change"
+    user:
+      delete: "Delete"
+      you_sure: "You sure?"
+  sessions:
+    new:
+      form_email: "Email"
+      form_password: "Password"
+      title_login: "Login"
+      remember_me: "Remember me on this computer"
+      form_newuser: "New user?"
+      sign_up: "Sign Up Now!"
+  shared:
+    error_messages:
+      error: "Error"
+  notifi:
+    welcome: "Welcome to the Sample App"
+    show: "Not found"
+    danger_login: "Invalid email/password combination"
+    update: "Update Success!"
+    notifi_login: "Please log in."
+    success_destroy: "User deleted"

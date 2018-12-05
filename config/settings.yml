@@ -11,3 +11,5 @@ name_max: 50
 email_max: 250
 password_min: 6
 gravatar_size: 80
+gravatar_user_size: 50
+href_gravatar: "http://gravatar.com/emails"

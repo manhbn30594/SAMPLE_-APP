@@ -1,59 +1,87 @@
 vi:
-  #HEADER
-  home: "Trang Chủ"
-  help: "Trợ Giúp"
-  login: "Đăng Nhập"
-  english: "Tiếng Anh"
-  vietnamese: "Tiếng Việt"
-  #FOOTER
-  ruby_on_rails: "%{link_rubyonrails} của %{link_michaelhartl}"
-  text_rubyonrails: "Ruby on Rails"
-  text_michaelhartl: "Michael Hartl"
-  about: "Về Chúng Tôi"
-  contact: "Liên Hệ"
-  news: "<b>%{link_news}</b>"
-  text_news: "Tin Tức"
-  #HOME PAGES
-  title_home: "Trang chủ"
-  welcome: "Chào mừng bạn đến với Ứng dụng mẫu"
-  title_welcome: "Đây là trang chủ cho ứng dụng mẫu %{link_here}"
-  rails_tutorial: "Ruby on Rails Tutorial"
-  sign_up: "Đăng Kí Ngay!"
-  #HELP PAGES
-  title_help: "Trợ giúp"
-  rails_book_text: "Nhận trợ giúp về Hướng dẫn về Ruby on Rails tại <b>%{link_help}</b>. Để được trợ giúp về ứng dụng mẫu này, hãy xem <em>%{link_book}</em>."
-  rails_help_section: "Phần trợ giúp Rails Tutorial"
-  rails_help_book: "sách Ruby on Rails Tutorial"
-  #ABOUT PAGES
-  title_about: "Về chúng tôi"
-  about_text: "<em>%{link_rails_about}</em> là một loạt %{link_rails_book} và %{link_rails_screencasts} để dạy phát triển web với %{link_rails}. Đây là ứng dụng mẫu cho hướng dẫn."
-  link_rails_tutorial_text: "Ruby on Rails Tutorial"
-  link_rails_book_text: "sách"
-  link_rails_screencasts_text: "screencast"
-  link_rails_text: "Ruby on Rails"
-  #CONTACT PAGES
-  title_contact: "Liên Hệ"
-  contact_text: "Liên hệ với Ruby on Rails Tutorial về ứng dụng mẫu tại %{link_contact}."
-  link_contact_text: "Trang liên hệ"
-  #NEW PAGE
-  title_signup: "Đăng Kí"
-  title_user: "Người dùng"
-  user_text: "Tìm tôi tại"
-  form_name: "Tên người dùng"
-  form_email: "Địa chỉ Email"
-  form_password: "Mật khẩu"
-  form_password_confirmation: "Xác nhận lại mật khẩu"
-  form_submit: "Tạo tài khoản"
-  form_newuser: "Tạo người dùng mới?"
-  #
-  title_login: "Đăng Nhập"
-  show: "Không tìm thấy"
-  error: "Lỗi"
-  #LOGIN
-  danger_login: "Email/Mật khẩu không hợp lệ"
-  #dropdown
-  account: "Tài Khoản"
-  profile: "Cá nhân"
-  settings: "Cài đặt"
-  logout: "Đăng xuất"
-  remember_me: "Ghi nhớ tài khoản trên máy tính"
+  layouts:
+    header:
+      home: "Trang Chủ"
+      help: "Trợ Giúp"
+      title_h1: "Tất cả người dùng"
+      account: "Tài Khoản"
+      profile: "Cá nhân"
+      settings: "Cài đặt"
+      logout: "Đăng xuất"
+      login: "Đăng Nhập"
+      english: "Tiếng Anh"
+      vietnamese: "Tiếng Việt"
+    footer:
+      ruby_on_rails: "%{link_rubyonrails} của %{link_michaelhartl}"
+      text_rubyonrails: "Ruby on Rails"
+      text_michaelhartl: "Michael Hartl"
+      about: "Về Chúng Tôi"
+      contact: "Liên Hệ"
+      news: "<b>%{link_news}</b>"
+      text_news: "Tin Tức"
+  static_pages:
+    home:
+      title_home: "Trang chủ"
+      welcome: "Chào mừng bạn đến với Ứng dụng mẫu"
+      title_welcome: "Đây là trang chủ cho ứng dụng mẫu %{link_here}"
+      rails_tutorial: "Ruby on Rails Tutorial"
+      sign_up: "Đăng Kí Ngay!"
+    help:
+      title_help: "Trợ giúp"
+      rails_book_text: "Nhận trợ giúp về Hướng dẫn về Ruby on Rails tại <b>%{link_help}</b>. Để được trợ giúp về ứng dụng mẫu này, hãy xem <em>%{link_book}</em>."
+      rails_help_section: "Phần trợ giúp Rails Tutorial"
+      rails_help_book: "sách Ruby on Rails Tutorial"
+    about:
+      title_about: "Về chúng tôi"
+      about_text: "<em>%{link_rails_about}</em> là một loạt %{link_rails_book} và %{link_rails_screencasts} để dạy phát triển web với %{link_rails}. Đây là ứng dụng mẫu cho hướng dẫn."
+      link_rails_tutorial_text: "Ruby on Rails Tutorial"
+      link_rails_book_text: "sách"
+      link_rails_screencasts_text: "screencast"
+      link_rails_text: "Ruby on Rails"
+    contact:
+      title_contact: "Liên Hệ"
+      contact_text: "Liên hệ với Ruby on Rails Tutorial về ứng dụng mẫu tại %{link_contact}."
+      link_contact_text: "Trang liên hệ"
+  users:
+    new:
+      title_signup: "Đăng Kí"
+      title_user: "Người dùng"
+    form:
+      form_name: "Tên người dùng"
+      form_email: "Địa chỉ Email"
+      form_password: "Mật khẩu"
+      form_password_confirmation: "Xác nhận lại mật khẩu"
+      form_submit: "Tạo tài khoản"
+    index:
+      title_user: "Người dùng"
+      title_h1: "Tất cả người dùng"
+    edit:
+      title_edit: "Cập nhật"
+      title_h1: "Cập nhật trang cá nhân"
+      form_name: "Tên người dùng"
+      form_email: "Địa chỉ Email"
+      form_password: "Mật khẩu"
+      form_password_confirmation: "Xác nhận lại mật khẩu"
+      save_changes: "Lưu thay đổi"
+      change_gravatar: "Thay đổi"
+    user:
+      delete: "Xóa"
+      you_sure: "Bạn có chắc chắn?"
+  sessions:
+    new:
+      form_email: "Địa chỉ Email"
+      form_password: "Mật khẩu"
+      title_login: "Đăng Nhập"
+      remember_me: "Ghi nhớ tài khoản trên máy tính"
+      form_newuser: "Tạo người dùng mới?"
+      sign_up: "Đăng Kí Ngay!"
+  shared:
+    error_messages:
+      error: "Lỗi"
+  notifi:
+    welcome: "Chào mừng bạn đến với Ứng dụng mẫu"
+    show: "Không tìm thấy"
+    danger_login: "Email/Mật khẩu không hợp lệ"
+    update: "Cập nhật thành công"
+    notifi_login: "Xin hãy đăng nhập."
+    success_destroy: "Xóa người dùng"
