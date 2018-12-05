@@ -49,5 +49,10 @@ en:
   title_login: "Login"
   show: "Not found"
   error: "Error"
-
-
+  #LOGIN
+  danger_login: "Invalid email/password combination"
+  #dropdown
+  account: "Account"
+  profile: "Profile"
+  settings: "Settings"
+  logout: "Log out"

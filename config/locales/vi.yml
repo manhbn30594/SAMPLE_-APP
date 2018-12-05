@@ -49,3 +49,10 @@ vi:
   title_login: "Đăng Nhập"
   show: "Không tìm thấy"
   error: "Lỗi"
+  #LOGIN
+  danger_login: "Email/Mật khẩu không hợp lệ"
+  #dropdown
+  account: "Tài Khoản"
+  profile: "Cá nhân"
+  settings: "Cài đặt"
+  logout: "Đăng xuất"
