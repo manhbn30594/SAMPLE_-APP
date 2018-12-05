@@ -79,9 +79,22 @@ en:
     error_messages:
       error: "Error"
   notifi:
-    welcome: "Welcome to the Sample App"
+    welcome: "Please check your email to activate your account."
     show: "Not found"
     danger_login: "Invalid email/password combination"
     update: "Update Success!"
     notifi_login: "Please log in."
     success_destroy: "User deleted"
+  user_mailer:
+    account_activation:
+      acc_activation: "Account activation"
+      activate: "Activate"
+      sample: "Sample App"
+      hi: "Hi"
+      p_text: "Welcome to the Sample App! Click on the link below to activate your account:"
+  account_activation_controller:
+    success: "Account activated!"
+    danger: "Invalid activation link"
+  sessions_controller:
+    mess1: "Account not activated. "
+    mess2: "Check your email for the activation link"
