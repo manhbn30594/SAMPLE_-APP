@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
-  before_action :correct_user, only: [:edit, :update]
+  before_action :logged_in_user, only: %i(index edit update destroy)
+  before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
   def index
@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       @user.send_activation_email
-      flash[:info] = t("notifi.welcome")
+      flash[:info] = t "notifi.welcome"
       redirect_to root_url
     else
       render :new
@@ -25,7 +25,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find_by id: params[:id]
     return if @user
-    flash[:danger] = t("notifi.show")
+    flash[:danger] = t "notifi.show"
     redirect_to root_url and return unless true
   end
 
@@ -33,8 +33,8 @@ class UsersController < ApplicationController
   end
 
   def update
-    if @user.update_attributes(user_params)
-      flash[:success] = t("notifi.update")
+    if @user.update user_params
+      flash[:success] = t "notifi.update"
       redirect_to @user
     else
       render :edit
@@ -43,7 +43,7 @@ class UsersController < ApplicationController
 
   def destroy
       @user.destroy
-      flash[:success] = t("notifi.success_destroy")
+      flash[:success] = t "notifi.success_destroy"
       redirect_to users_url
   end
 
@@ -61,7 +61,7 @@ class UsersController < ApplicationController
   def logged_in_user
     unless logged_in?
       store_location
-      flash[:danger] = t("notifi.notifi_login")
+      flash[:danger] = t "notifi.notifi_login"
       redirect_to login_url
     end
   end
