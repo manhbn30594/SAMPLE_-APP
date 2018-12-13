@@ -79,9 +79,22 @@ vi:
     error_messages:
       error: "Lỗi"
   notifi:
-    welcome: "Chào mừng bạn đến với Ứng dụng mẫu"
+    welcome: "Hãy kiểm tra lại email của bạn để kích hoạt tài khoản"
     show: "Không tìm thấy"
     danger_login: "Email/Mật khẩu không hợp lệ"
     update: "Cập nhật thành công"
     notifi_login: "Xin hãy đăng nhập."
     success_destroy: "Xóa người dùng"
+  user_mailer:
+    account_activation:
+      acc_activation: "Kích hoạt tài khoản"
+      activate: "Kích hoạt"
+      sample: "Ưng dụng mẫu"
+      hi: "Xin chào"
+      p_text: "Chào mừng bạn đến với ứng dụng mẫu! Bấm vào liên kết phía dưới để kích hoạt tài khoản của bạn:"
+  account_activation_controller:
+    success: "Tài khoản được kích hoạt!"
+    danger: "Liên kết kích hoạt không hợp lệ"
+  sessions_controller:
+    mess1: "Tài khoản không được kích hoạt. "
+    mess2: "Kiểm tra email cho liên kết kích hoạt"
